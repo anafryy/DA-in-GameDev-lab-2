@@ -47,7 +47,7 @@ public class GoogleSheet : MonoBehaviour
 
     IEnumerator GoogleSheets()
     {
-        UnityWebRequest curentResp = UnityWebRequest.Get("https://sheets.googleapis.com/v4/spreadsheets/1DXr_F4tzujM2XSaE6TjYJh7Hh8Kw_Lio4XVDpMHuMD0/values/Лист1?key=AIzaSyC5XCKRGFbxalcIt38IN5kBlIeb0ITZwmg");
+        UnityWebRequest curentResp = UnityWebRequest.Get("https://sheets.googleapis.com/v4/spreadsheets/1J9suMJBJNFLx-i96Sefmyo1uaANsbVW6jThdJUqS0xg/values/Лист1?key=AIzaSyBqmunuAOTy2G4HRBxY9-KG_dxy6FB6CVA");
         yield return curentResp.SendWebRequest();
         string rawResp = curentResp.downloadHandler.text;
         var rawJson = JSON.Parse(rawResp);
